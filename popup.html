@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Speed Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        #speedInput {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .button:active {
+            background-color: #1e7e34;
+        }
+        @media (max-width: 500px) {
+            #speedInput, .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Control Video Speed</h1>
+        <input type="number" id="speedInput" placeholder="Enter speed (e.g., 1, 2, 100)" />
+        <button class="button" id="setSpeedBtn">Set Speed</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
